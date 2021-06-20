@@ -96,6 +96,13 @@ header .content .search__engine .icon span i {
   cursor: pointer;
   font-size: 1.6rem;
 }
+header .content .login {
+  border-radius: 2rem;
+  font-size: 1.4rem;
+}
+header .content .login span {
+  margin-left:0.8rem;
+}
 
 nav {
   position: sticky;
