@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UTExpress.com</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="content">
+        <div class="image">
+          <img src="./images/logotest.jpg" alt="logo" class="logo" />
+        </div>
+        <div class="current-time">
+          <span class="week-days"></span>
+          <span>, <span class="day"></span>/</span>
+          <span class="month"></span>/
+          <span class="year"></span>
+        </div>
+        <div class="hour-minute">
+          <span class="hour"></span>: <span class="minute"></span>:
+          <span class="second"></span>
+        </div>
+        <div class="search">
+          <div class="search__engine">
+            <input type="text" placeholder="Search" />
+            <div class="icon">
+              <span><i class="fas fa-search"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <ul class="list-item">
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Thời sự</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Chính trị</span>
+            <a href="https://vnexpress.net/quoc-hoi-se-bau-lanh-dao-cap-cao-tai-ky-hop-thang-7-4294021.html"
+              class="summary" style="top: 0">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/14/z2552115917420-944019a699781c6-2714-7849-1623666237.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=8onY2aW3e5g02kCaSlI5Ow"
+                  alt="president" />
+              </div>
+              <div class="summary__content">
+                <h2>Quốc hội sẽ bầu lãnh đạo cấp cao tại kỳ họp tháng 7</h2>
+                <p>
+                  Kỳ họp thứ 1, Quốc hội khóa XV dự kiến khai mạc vào 20/7 và
+                  làm việc trong 11,5 ngày, trong đó dành 5 ngày cho công tác
+                  nhân sự...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Giao thông</span>
+            <a href="https://vnexpress.net/gan-18-000-ty-dong-mo-rong-4-quoc-lo-cua-ngo-tp-hcm-4294188.html"
+              class="summary" style="top: -100%">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/14/qlo50-3110-1623684290.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=l2L0fbfcVtF1HhT_fo27eQ"
+                  alt="traffic" />
+              </div>
+              <div class="summary__content">
+                <h2>Gần 18000 tỷ đồng mở rộng 4 quốc lộ cửa ngõ TPHCM</h2>
+                <p>
+                  Quốc lộ 50, 1, 13, 22 dự kiến được nâng cấp, mở rộng với
+                  tổng kinh phí gần 18.000 tỷ đồng, làm ở giai đoạn 2021-2025,
+                  giúp giảm kẹt xe, tai nạn, tăng kết nối vùng....
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Dân sinh</span>
+            <a href="https://vnexpress.net/dieu-oto-cho-can-bo-tru-mua-o-chot-kiem-soat-covid-19-4293457.html"
+              class="summary" style="top: -200%">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/13/dieu-xe-buyt-1-3051-1623558370.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=hIKVbnil1tZKEvE04X5yRA"
+                  alt="life" />
+              </div>
+              <div class="summary__content">
+                <h2>Điều ôtô cho cán bộ trú mưa ở chốt kiểm soát Covid-19</h2>
+                <p>
+                  HÀ TĨNH - Công ty vận tải, người dân đã điều xe buýt, xe tải
+                  đến hàng chục chốt kiểm soát phòng chống Covid-19 giúp lực
+                  lượng chức năng có chỗ trú mưa.....
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Mê Kong</span>
+            <a href="https://vnexpress.net/tien-giang-gian-cach-xa-hoi-2-dia-phuong-theo-chi-thi-16-4293786.html"
+              class="summary" style="top: -300%">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/14/ca-nhiem-tien-giang-2067-1623638549.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=oyD3cx32sAr4W24ygykHIw"
+                  alt="Mekong" />
+              </div>
+              <div class="summary__content">
+                <h2>
+                  Tiền Giang giãn cách xã hội 2 địa phương theo Chỉ thị 16
+                </h2>
+                <p>
+                  Thị xã Cai Lậy và huyện Cái Bè giãn cách xã hội theo Chỉ thị
+                  16 từ ngày 14/6 cho đến khi có thông báo mới, sau khi hai
+                  địa phương này xuất hiện 27 ca mắc Covid-19...
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Thế giới</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Người Việt 5 Châu</span>
+            <a href="https://vnexpress.net/italy-bat-nghi-pham-vu-39-nguoi-viet-chet-trong-container-4293226.html "
+              class="summary" style="top: 0">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/12/2019-10-29t153811z-1-lynxmpef9-8171-4694-1623491565.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=f0W8eauyjhG0nJ7nzFYyaQ"
+                  alt="Vietnamese-people" />
+              </div>
+              <div class="summary__content">
+                <h2>
+                  Italy bắt nghi phạm vụ 39 người Việt chết trong container
+                </h2>
+                <p>
+                  ảnh sát Italy bắt giam Stefan Damian Dragos, người bị cáo
+                  buộc cung cấp container chở người Việt di cư đến Anh, dẫn
+                  đến vụ 39 người chết ngạt...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Cuộc sống đó đây</span>
+            <a href="https://vnexpress.net/cuoc-song-cua-nguoi-dan-ong-lay-38-vo-4293959.html " class="summary"
+              style="top: -100%">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/14/anh-cat-noname-5631-1623657114.png?w=680&h=0&q=100&dpr=1&fit=crop&s=-poJVDwWraa_PEcVlj-BFg"
+                  alt="life" />
+              </div>
+              <div class="summary__content">
+                <h2>Cuộc sống của người đàn ông lấy 38 vợ</h2>
+                <p>
+                  ẤN ĐỘ - Trước khi qua đời ở tuổi 76, Ziona Chana là chủ của
+                  một gia đình đông thành viên nhất thế giới với 160 người...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Quân sự</span>
+            <a href="https://vnexpress.net/tau-san-bay-my-tien-vao-bien-dong-4294398.html" class="summary"
+              style="top: -200%">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/15/55631871759a-Ronald-Reagan-8309-1623729001.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=2P4GDgxpBJWarl1Fq11kTg"
+                  alt="millitary" />
+              </div>
+              <div class="summary__content">
+                <h2>Tàu sân bay Mỹ tiến vào Biển Đông</h2>
+                <p>
+                  Tàu sân bay Ronald Reagan cùng nhóm chiến hạm hộ tống tiến
+                  vào Biển Đông, dự kiến triển khai các hoạt động huấn luyện
+                  tác chiến tại đây...
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Khoa học</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Phát Minh</span>
+            <a href="https://vnexpress.net/he-thong-xu-ly-tu-dong-mau-benh-pham-covid-19-4294854.html" class="summary"
+              style="top: 0">
+              <div class="image">
+                <img
+                  src="https://iv1cdn.vnecdn.net/vnexpress/images/web/2021/06/16/he-thong-xu-ly-tu-dong-mau-benh-pham-covid-19-1623841519.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=I7ujmG4bgZRMS2yJxFkKog"
+                  alt="machine" />
+              </div>
+              <div class="summary__content">
+                <h2>Hệ thống xử lý tự động mẫu bệnh phẩm Covid-19</h2>
+                <p>
+                  Hệ thống MGISTP-7000 mới được ra mắt ở Trung Quốc có thể
+                  chuyển 192 mẫu bệnh phẩm từ ống nghiệm sang các khay vi thể
+                  92 giếng trong 40 phút...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Ưng dụng</span>
+            <a href="https://vnexpress.net/robot-ti-hon-giup-phan-huy-vi-nhua-4295000.html" class="summary"
+              style="top: -100%">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/16/Robot-vi-nhua-6882-1623817382.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=sY2hVgY_XSX_Np23nYCYyw"
+                  alt="Roboto" />
+              </div>
+              <div class="summary__content">
+                <h2>Robot tí hon giúp phân hủy vi nhựa</h2>
+                <p>
+                  Các nhà khoa học chế tạo vật xúc tác tí hon có thể tự di
+                  chuyển dưới ánh sáng Mặt Trời và bám vào các hạt vi nhựa...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Thế giới tự nhiên</span>
+            <a href="https://vnexpress.net/ly-do-loai-oc-sen-nho-song-sot-sau-su-kien-tuyet-chung-4295399.html "
+              class="summary" style="top: -200%">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/17/oc-sen-soi-tia-7865-1623922579.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=SceBPVygBs-vdSBZPDvGaA"
+                  alt="Natural World" />
+              </div>
+              <div class="summary__content">
+                <h2>
+                  Lý do loài ốc sên nhỏ sóng sót sau sự kiện tuyệt chủng
+                </h2>
+                <p>
+                  Sử dụng máy tính mini, các nhà nghiên cứu đã hiểu tại sao
+                  Partula hyalina là loài ốc sên bản địa duy nhất còn tồn tại
+                  trên quần đảo Society...
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Kinh doanh</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Nông Sản</span>
+            <a href="https://vnexpress.net/dua-nong-san-len-cho-online-4283490.html" class="summary" style="top: 0">
+              <div class="image">
+                <img
+                  src="https://i1-kinhdoanh.vnecdn.net/2021/05/25/vai-Giang-huy-jpeg-8457-1621922416.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=z4HsC6wp7l1fx2o24WEYDg"
+                  alt="agricultural" />
+              </div>
+              <div class="summary__content">
+                <h2>Đưa nông sản lên chợ online</h2>
+                <p>
+                  Dịch bệnh đang tạo ra kênh tiêu thụ mới cho nông sản, đặc
+                  biệt như vải thiều khi thương lái không thể sang Việt Nam
+                  thu mua như mọi năm...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Hải Sản</span>
+            <a href="https://vnexpress.net/cua-hang-hai-san-xoay-huong-de-ton-tai-4291643.html " style="top: -100%"
+              class="summary">
+              <div class="image">
+                <img
+                  src="https://i1-kinhdoanh.vnecdn.net/2021/06/09/197767863-514656426350186-1880-5910-1850-1623237257.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=O12fVsgtPQn7lQYwPavHwg"
+                  alt="sea-food" />
+              </div>
+              <div class="summary__content">
+                <h2>Cửa hàng hải sản xoay hướng để tồn tại</h2>
+                <p>
+                  Ngoài bán tại chỗ, nhiều cửa hàng hải sản mở kênh online và
+                  nấu thêm món ăn phục vụ khách để mong cầm cự qua đợt dịch
+                  mới...
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Thể thao</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Bóng đá</span>
+            <a href="https://vnexpress.net/vong-loai-cuoi-world-cup-ap-dung-var-4295903.html" style="top: 0"
+              class="summary">
+              <div class="image">
+                <img
+                  src="https://i1-vnexpress.vnecdn.net/2021/06/17/var-jpeg-1623946113-5489-1623946142.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=jbBxrkOaB6bJVpzDHEg-dQ"
+                  alt="sea-food" />
+              </div>
+              <div class="summary__content">
+                <h2>Vòng loại cuối World Cup áp dụng VAR</h2>
+                <p>
+                  Đội tuyển Việt Nam sẽ thi đấu 10 trận vòng loại thứ ba World
+                  Cup 2022 khu vực châu Á, với công nghệ trọng tài video...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Tennis</span>
+            <a href="https://vnexpress.net/toni-nadal-federer-va-nadal-dang-gap-nguy-4295494.html" style="top: -100%"
+              class="summary">
+              <div class="image">
+                <img
+                  src="https://i1-thethao.vnecdn.net/2021/06/17/2-4416-1623898749.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=YFFL3ZiclxDzMwchk1Msmg"
+                  alt="sea-food" />
+              </div>
+              <div class="summary__content">
+                <h2>Toni Nadal: 'Federer và Nadal đang gặp nguy'</h2>
+                <p>
+                  Theo HLV Toni Nadal, Roger Federer và Rafael Nadal có nguy
+                  cơ lớn mất kỷ lục Grand Slam vào tay Novak Djokovic...
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Các môn khác</span>
+            <a href="https://vnexpress.net/runner-giai-run-for-vaccine-gop-hon-500-trieu-dong-vao-quy-4295472.html"
+              style="top: -200%" class="summary">
+              <div class="image">
+                <img
+                  src="https://i1-thethao.vnecdn.net/2021/06/17/IMG-1-JPG-9428-1600932607-4361-9253-5939-1623901792.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=g-XNd29_1UXZWG2WEL-XaQ"
+                  alt="sea-food" />
+              </div>
+              <div class="summary__content">
+                <h2>
+                  Runner giải 'Run for Vaccine' góp hơn 500 triệu đồng vào quỹ
+                </h2>
+                <p>
+                  Hơn 5.000 runner và 260 câu lạc bộ tham dự giải chạy ảo trên
+                  nền tảng V-Race đã ủng hộ hơn 500 triệu đồng vào Quỹ vaccine
+                  sau 15 ngày...
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Giải trí</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Video</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Phim</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Nhạc</span>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Pháp Luật</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Hồ sơ phá án</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Tư vấn</span>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Đời sống</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Tổ ấm</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Bài học sống</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Nhà</span>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Du lịch</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Điểm đến</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Dấu chân</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Tư vấn</span>
+          </li>
+        </ul>
+      </li>
+      <li class="news-item">
+        <div class="title">
+          <span class="title-text">Công nghệ</span>
+          <i class="fas fa-angle-down"></i>
+        </div>
+        <ul class="sub-menu">
+          <li class="sub-news">
+            <span class="sub-title">Công nghệ</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Sản phẩm</span>
+          </li>
+          <li class="sub-news">
+            <span class="sub-title">Diễn đàn</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <div class="container">
+      <div class="hot-content pb-4" style="border-bottom: 0.5px solid rgba(78, 77, 77, 0.699)">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-12">
+                <a href="https://vnexpress.net/bo-y-te-chuyen-khan-800-000-lieu-vaccine-covid-19-cho-tp-hcm-4295231.html"
+                  class="hot-link">
+                  <div class="row">
+                    <div class="col-lg-8 p-0">
+                      <div class="hot-content__image">
+                        <img
+                          src="https://i1-suckhoe.vnecdn.net/2021/06/16/huukhoa-103-of-132-1623843761-5875-1623844009.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=DddpQLH8DDPDXk95KmheFQ"
+                          alt="medical" />
+                      </div>
+                    </div>
+                    <div class="col-lg-4 p-0">
+                      <div class="content p-5 h-100">
+                        <h2 class="title">
+                          Bộ y tế chuyển khẩn 800.000 liều vaccine Covid-19
+                          cho TP HCM
+                        </h2>
+                        <p>
+                          Thứ trưởng Nguyễn Trường Sơn chiều 16/6 thông báo Bộ
+                          Y tế quyết định chuyển 800.000 liều vaccine Covid-19
+                          cho TP HCM, khi số ca nhiễm tại thành phố vượt
+                          1.000.
+                        </p>
+                        <p>
+                          Họp Bộ phận thường trực đặc biệt của Bộ Y tế hỗ trợ
+                          ...
+                        </p>
+                        <div class="rate">
+                          <div class="comment">
+                            <i class="far fa-comment-alt"></i>
+                          </div>
+                          <div class="tag">
+                            <i class="fas fa-heart"></i>
+                            <span>Sức khỏe</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-12 mt-3">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <a href="https://vnexpress.net/gan-mot-trieu-lieu-vaccine-covid-19-tu-nhat-ve-viet-nam-4295350.html"
+                      class="other-content" style="display: block">
+                      <h2>
+                        Gần một triệu liều vaccine Covid-19 từ Nhật về Việt
+                        Nam
+                      </h2>
+                      <span class="description">966.320 liều vaccine Covid-19 do Nhật Bản hỗ trợ đã
+                        về tới sân bay Nội Bài đêm 16/6. Toàn bộ số vaccine
+                        này được dành cho TP HCM tiêm các nhóm ưu tiên diện
+                        rộng.</span>
+                      <span><i class="far fa-comment-alt"> 86</i></span>
+                    </a>
+                  </div>
+                  <div class="col-lg-4" style="border-left: 1px solid rgba(87, 83, 83, 0.651)">
+                    <a href="https://vnexpress.net/so-ca-covid-19-theo-ngay-cao-ky-luc-tai-tp-hcm-4295821.html"
+                      class="other-content" style="display: block">
+                      <h2>Số ca Covid-19 theo ngày cao kỷ lục tại TP HCM</h2>
+                      <span class="description">TP HCM hôm nay ghi nhận tổng cộng 137 ca Covid-19, là
+                        số ca nhiễm theo ngày cao nhất tính từ khi dịch xuất
+                        hiện đầu năm 2020 đến nay.</span>
+                      <span><i class="far fa-comment-alt"> 48</i></span>
+                    </a>
+                  </div>
+                  <div class="col-lg-4" style="border-left: 1px solid rgba(87, 83, 83, 0.651)">
+                    <a href="https://vnexpress.net/luat-rung-tren-mang-4295900.html" class="other-content"
+                      style="display: block">
+                      <h2>Luật rừng trên mạng</h2>
+                      <span class="description">Sau bàn thua của đội tuyển Việt Nam với UAE đêm 15/6,
+                        lời lẽ đe dọa được ném tới tấp vào tài khoản mạng xã
+                        hội tên ông Ali Sabah Adday Al-qaysi.</span>
+                      <span><i class="far fa-comment-alt"> 71</i></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 pt-3">
+            <div class="advertise">
+              <img src="./images/health.jpg" alt="health" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="daily-news mt-4">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-5">
+                <a href="https://vnexpress.net/diem-moi-trong-chien-dich-tiem-chung-lon-nhat-lich-su-4295875.html"
+                  class="daily-link">
+                  <h2>Điểm mới trong chiến dịch tiêm chủng lớn nhất lịch sử</h2>
+                  <div class="sub-cont">
+                    <div class="sub-img">
+                      <img
+                        src="https://img.vietnamfinance.vn/webp-jpg/700x0/upload/news/hoanghung_btv/2020/7/7/nguyen-thanh-long.webp"
+                        alt="doctor" />
+                    </div>
+                    <p>
+                      Bộ trưởng Y tế Nguyễn Thanh Long cho biết chiến dịch tiêm
+                      chủng Covid-19 triển khai trên quy mô tất cả địa phương,
+                      điểm tiêm ở thông tin theo dõi.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-7">
+                <div class="covid-infected">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="covid-infected__VN">
+                        <div class="infected-heading">
+                          <h2>Số ca nhiễm tại Việt Nam</h2>
+                          <p>Lây nhiễm cộng đồng từ 27/4</p>
+                        </div>
+                        <div class="summary-infected">
+                          <span>Tổng</span>
+                          <span class="total-infected">8995</span>
+                          <span style="margin-right: 10px;">Số ca nhiễm</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 pl-0">
+                      <div class="detail-infected-city">
+                        <div class="heading-detail">
+                          <a href="https://vnexpress.net/covid-19/covid-19-viet-nam" class="data-covid">
+                            <i class="fas fa-database"></i>
+                            <span>Số liệu Covid-19</span>
+                          </a>
+                          <a href="https://vnexpress.net/covid-19/tin-tuc">
+                            <i class="far fa-newspaper"></i>
+                            <span>Tin tức cập nhật</span>
+                          </a>
+                        </div>
+                        <div class="content-detail">
+                          <div class="city">
+                            <p class="content-title">Tỉnh</p>
+                            <p>TP HCM</p>
+                            <p>Bắc Giang</p>
+                            <p>Bắc Ninh</p>
+                          </div>
+                          <div class="time-now">
+                            <p class="content-title">Hôm nay</p>
+                            <p>+60</p>
+                            <p>+21</p>
+                            <p>-</p>
+                          </div>
+                          <div class="city-infected">
+                            <p class="content-title">Tổng</p>
+                            <p>1257</p>
+                            <p>5028</p>
+                            <p>1454</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 mt-4">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <a href="https://vnexpress.net/nha-dau-tu-tiep-tuc-ban-gia-vang-giam-manh-4295967.html"
+                      class="daily-link">
+                      <h2>Nhà đầu tư tiếp tục bán, giá vàng giảm mạnh</h2>
+                      <div class="sub-cont">
+                        <div class="sub-img">
+                          <img src="https://vcdn-kinhdoanh.vnecdn.net/2021/06/16/1606Vang-7081-1623808027.gif"
+                            alt="doctor" />
+                        </div>
+                        <p>
+                          Việc Fed đột ngột thay đổi quan điểm về thời gian nâng lãi suất đồng USD đã tác động mạnh đến
+                          sự quan tâm của nhà đầu tư với vàng.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-12 mt-5">
+                    <a href="https://vnexpress.net/nha-dau-tu-tiep-tuc-ban-gia-vang-giam-manh-4295967.html"
+                      class="daily-link">
+                      <h2>500 nhân viên khu công nghệ cao khởi đầu chiến dịch tiêm chủng lớn nhất lịch sử</h2>
+                      <div class="sub-cont">
+                        <div class="sub-img">
+                          <img
+                            src="https://i1-suckhoe.vnecdn.net/2021/06/19/tiem-vx-FPT-1-1-9862-1624065790.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=LoOvvzAF6fjtuSd-RojRRQ"
+                            alt="doctor" />
+                        </div>
+                        <p>
+                          500 nhân viên Công ty FPT Software tại Khu công nghệ cao TP HCM sáng 19/6 được tiêm vaccine
+                          Covid-19, khởi động chiến dịch tiêm chủng lớn nhất lịch sử.
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="sub-news-daily">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-8 pr-0">
+                          <a href="https://vnexpress.net/messi-giup-argentina-ha-uruguay-4296469.html"
+                            class="sub-daily-hot-news w-100">
+                            <div class="sub-news-daily-img w-50">
+                              <img
+                                src="https://i1-thethao.vnecdn.net/2021/06/19/e4nek0rxwaoxox1624066315110wid-6080-8289-1624068180.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=tCzaDAx4cW0nS5oRmr3fFg"
+                                alt="sport">
+                            </div>
+                            <div class="sub-news-daily-content ml-4 w-50">
+                              <h2 class="sub-news-title">Messi giúp Argentina hạ Uruguay</h2>
+                              <p class="sub-news-desc">
+                                Argentina thắng Uruguay 1-0 tại lượt thứ hai bảng A Copa America 2021, nhờ pha kiến tạo
+                                của Lionel Messi trong hiệp một.
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-4">
+                          <a href="https://vnexpress.net/cdv-phat-cuong-vi-de-bruyne-o-euro-2021-4296324.html"
+                            class="sub-news-daily-content">
+                            <h2 class="sub-news-title">CĐV phát cuồng vì De Bruyne ở Euro 2021</h2>
+                            <p class="sub-news-desc">
+                              Tiền vệ Kevin De Bruyne gây ấn tượng mạnh sau trận Bỉ thắng ngược Đan Mạch ở lượt trận thứ
+                              hai Euro 2021.
+                            </p>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="more-daily-content pt-4">
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <a href="https://vnexpress.net/hummels-con-trai-mung-khi-toi-phan-luoi-4296561.html"
+                              class="sub-content">Hummels: 'Con trai mừng khi tôi phản lưới'</a>
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="https://vnexpress.net/eriksen-den-tham-tuyen-dan-mach-sau-khi-xuat-vien-4296510.html"
+                              class="sub-content">Eriksen đến thăm tuyển Đan Mạch sau khi xuất viện</a>
+                          </div>
+                          <div class="col-lg-4">
+                            <a href="https://vnexpress.net/croatia-lam-nguy-tai-euro-4296429-tong-thuat.html"
+                              class="sub-content">Croatia lâm nguy tại Euro</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="wrapper">
+              <div class="sports-detail">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <div class="sports-detail-heading">
+                      <a href="https://vnexpress.net/the-thao/euro-2021">
+                        <div class="sport-heading-logo">
+                          <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v393/v2_2019/pc/graphics/logo-euro.svg"
+                            alt="sport-logo">
+                        </div>
+                      </a>
+                      <button type="button">chi tiết</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <a href="https://vnexpress.net/the-thao/euro-2021/tran-dau/657694/anh-scotland"
+                      class="sport-detail-infor">
+                      <div class="country-name">
+                        <p class="name-heading">KT</p>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/10.png" alt="country-name">
+                            <span> Anh</span>
+                          </span>
+                        </div>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/1108.png" alt="country-name">
+                            <span>Scotland</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ratio">
+                        <p class="time">19/6</p>
+                        <p class="score">0</p>
+                        <span class="score">0</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a href="https://vnexpress.net/the-thao/euro-2021/tran-dau/657693/croatia-czech"
+                      class="sport-detail-infor">
+                      <div class="country-name">
+                        <p class="name-heading">KT</p>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/3.png" alt="country-name">
+                            <span>Croatia</span>
+                          </span>
+                        </div>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/770.png" alt="country-name">
+                            <span>Czech</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ratio">
+                        <p class="time">18/6</p>
+                        <p class="score">1</p>
+                        <span class="score">1</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a href="https://vnexpress.net/the-thao/euro-2021/tran-dau/657692/thuy-dien-slovakia"
+                      class="sport-detail-infor">
+                      <div class="country-name">
+                        <p class="name-heading">KT</p>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/5.png" alt="country-name">
+                            <span>Sweden</span>
+                          </span>
+                        </div>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/773.png" alt="country-name">
+                            <span>Czech</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ratio">
+                        <p class="time">18/6</p>
+                        <p class="score">1</p>
+                        <span class="score">0</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a href="https://vnexpress.net/the-thao/euro-2021/tran-dau/657695/hungary-phap"
+                      class="sport-detail-infor">
+                      <div class="country-name">
+                        <p class="name-heading">Saturday, 19/6</p>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/769.png" alt="country-name">
+                            <span>Hungary</span>
+                          </span>
+                        </div>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/2.png" alt="country-name">
+                            <span>France</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ratio">
+                        <p class="time">20:00</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-2">
+                    <a href="https://vnexpress.net/the-thao/euro-2021/tran-dau/657696/bo-dao-nha-duc"
+                      class="sport-detail-infor" style="border: none;">
+                      <div class="country-name">
+                        <p class="name-heading">Saturday, 19/6</p>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/27.png" alt="country-name">
+                            <span>Portugal</span>
+                          </span>
+                        </div>
+                        <div class="country">
+                          <span class="country-logo">
+                            <img src="https://is.vnecdn.net/objects/teams/25.png" alt="country-name">
+                            <span>Germany</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div class="ratio">
+                        <p class="time">23:00</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
