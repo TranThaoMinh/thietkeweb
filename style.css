@@ -17,6 +17,10 @@ a:hover {
   text-decoration: none !important;
 }
 
+body{
+  overflow: hidden;
+}
+
 header {
   padding: 2rem 6rem 2rem;
   background-color: #ffffff;
@@ -483,4 +487,3 @@ main .daily-news .wrapper .sports-detail .sport-detail-infor .ratio p.score {
   margin-bottom: 0.55rem;
 }
 
-/*# sourceMappingURL=style.css.map */
