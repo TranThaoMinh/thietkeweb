@@ -18,7 +18,7 @@ a:hover {
 }
 
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
